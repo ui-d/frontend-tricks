@@ -8,8 +8,10 @@ input {
 
 .wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    max-width: 300px;
+    max-width: 90%;
+    width: 100%;
     margin: 0 auto;
     border: 1px dashed lightgray;
     padding: 0 10px;
@@ -19,31 +21,10 @@ input {
     min-height: 20px;
 }
 
-.wrapper p {
-    display: block;
-    border: 1px solid black;
-    padding: 5px 10px;
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity .3s;
-    text-align: center;
+.alert {
+    font-weight: bold;
 }
 
-.wrapper p.input {
-    background: #dd215a;
-}
 
-.wrapper p.change {
-    background: #d8d8f6;
-}
-
-.wrapper p.keypress {
-    background: #f9dc5c;
-}
-
-.visible {
-    opacity: 1 !important;
-    transition: opacity .3s;
-}
 
 
