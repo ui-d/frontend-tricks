@@ -1,9 +1,3 @@
-const dateInput = document.querySelector('.inputEl');
-const dateOutput = document.querySelector('.alert');
-      dateInput.valueAsDate = new Date();
+const inputEl = document.querySelector('.inputEl');
 
-
-dateInput.addEventListener('input', () => {
-    // dateOutput. innerText = new Date(dateInput.value);
-    dateOutput. innerText = dateInput.valueAsDate;
-})
+inputEl.indeterminate = true;
