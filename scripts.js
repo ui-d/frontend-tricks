@@ -1,3 +1,10 @@
-const inputEl = document.querySelector('.inputEl');
+const discountPattern = /[1-2]{5}/
+const errorMessage = "Use the correct discount code"
 
-inputEl.indeterminate = true;
+const discount = document.querySelector('#discount');
+
+discount.addEventListener('input', ({target}) => {
+    const isValid = target.value.match(discountPattern);
+
+    target.setCustomValidity(isValid ? '' : errorMessage)
+})
